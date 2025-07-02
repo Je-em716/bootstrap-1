@@ -44,7 +44,6 @@
   </style>
 </head>
 <body>
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -54,24 +53,26 @@
             aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto d-flex align-items-center gap-2">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a href="#" class="btn btn-primary">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.youtube.com/">About</a>
+          <a href="project1-about.html" target="_blank" class="btn btn-primary">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a href="project1-project.html" target="_blank" class="btn btn-primary">Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" class="btn btn-primary">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <!-- Carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -85,29 +86,29 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <a href="https://je-em716.github.io/pract2-js/" target="_blank">
-        <img src="images/1-final.png" class="d-block w-100" alt="Project 1">
+      
+        <img src="images/web-h1.jpg" class="d-block w-100" alt="Project 1">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="heading-colored">Project 1(Coffe online store w/ more tools)</h5>
+          <h5 class="heading-colored">Project 1</h5>
           <p class="paragraph-colored">My first awesome project.</p>
         </div>
         
       </a>
     </div>
     <div class="carousel-item">
-      <a href=" https://je-em716.github.io/webdev/" target="_blank">
-      <img src="images/2nd.png" class="d-block w-100" alt="Project 2">
+      
+      <img src="images/web-h2.avif" class="d-block w-100" alt="Project 2">
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="heading-colored">Project 2(Software Developer landing page)</h5>
+        <h5 class="heading-colored">Project 2</h5>
         <p class="paragraph-colored">Another great project I worked on.</p>
       </div>
     </a>
     </div>
     <div class="carousel-item">
-      <a href=" https://je-em716.github.io/Practical-js2/" target="_blank"></a>
-      <img src="images/3rd.png" class="d-block w-100" alt="Project 3">
+    
+      <img src="images/web-h4.jpg" class="d-block w-100" alt="Project 3">
       <div class="carousel-caption d-none d-md-block">
-        <h5 class="heading-colored">Project 3(Coffe shop online store)</h5>
+        <h5 class="heading-colored">Project 3</h5>
         <p class="paragraph-colored">A cool project I built using modern technologies.</p>
       </div>
     </div>
@@ -121,45 +122,168 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<!-- Projects Section -->
+<section id="projects" class="bg-light py-5">
+
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Projects</h2>
+    <div class="row">
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card project-card mb-4">
+          <img src="images/2nd.png" class="card-img-top" alt="Project 1" style="width: 400px; height: 200px; object-fit: cover;">
+ <div class="card-body">
+            <h5 class="card-title">Software Developer Landing Page</h5>
+            <p class="card-text">A responsive landing page built using HTML, CSS, and JavaScript.</p>
+            <a href=" https://je-em716.github.io/webdev/" class="btn btn-primary" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card project-card mb-4">
+          <img src="images/1-final.png" class="card-img-top" alt="Project 1" style="width: 400px; height: 200px; object-fit: cover;">
+
+          <div class="card-body">
+            <h5 class="card-title">Coffee-shop Online Store w/ more tools</h5>
+            <p class="card-text">A full-stack web application using HTML ,CSS and JavaScript for a Coffee  Shop.</p>
+            <a href="https://je-em716.github.io/pract2-js/" target="_blank" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card project-card mb-4">
+          <img src="images/3rd.png" class="card-img-top" alt="Project 1" style="width: 400px; height: 220px; object-fit: cover;">
+
+          
+          <div class="card-body">
+            <h5 class="card-title">Coffe Shop Store </h5>
+            <p class="card-text">An interactive coffee shop using JavaScript.</p>
+            <a href="https://je-em716.github.io/Practical-js2/" target="_blank" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section id="video" class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="mb-4">Watch My Portfolio Video</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6"> <!-- Smaller width on desktop -->
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.youtube.com/embed/mq508HXzccI" 
+            title="YouTube video"
+            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            frameborder="0">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- Skills Section -->
 <div class="container my-5">
   <h2 class="text-center mb-4">My Skills</h2>
   <div class="row">
+    <!-- Left Column -->
     <div class="col-md-6">
       <h5>HTML</h5>
       <div class="progress mb-3">
-        <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 90%;">
+          90%
+        </div>
       </div>
+
       <h5>CSS</h5>
       <div class="progress mb-3">
-        <div class="progress-bar bg-info" style="width: 85%;">85%</div>
+        <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 85%;">
+          85%
+        </div>
       </div>
+
       <h5>JavaScript</h5>
       <div class="progress mb-3">
-        <div class="progress-bar bg-warning" style="width: 80%;">80%</div>
+        <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 80%;">
+          80%
+        </div>
       </div>
     </div>
+
+    <!-- Right Column -->
     <div class="col-md-6">
       <h5>React</h5>
       <div class="progress mb-3">
-        <div class="progress-bar bg-primary" style="width: 75%;">75%</div>
+        <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 95%;">
+          95%
+        </div>
       </div>
+
       <h5>Next.js</h5>
       <div class="progress mb-3">
-        <div class="progress-bar bg-dark" style="width: 70%;">70%</div>
+        <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 90%;">
+          90%
+        </div>
       </div>
+
       <h5>Node.js</h5>
       <div class="progress mb-3">
-        <div class="progress-bar bg-secondary" style="width: 65%;">65%</div>
+        <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 85%;">
+          85%
+        </div>
       </div>
     </div>
   </div>
 </div>
 
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Contact Me</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+\
+<section id="quick-links" class="py-3 text-white" style="background-color: #8B0000;">
+  <div class="container text-center">
+    <h2 class="mb-3">Quick Links</h2>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="project1-skills.html" target="_blank" class="btn btn-outline-light">Skills</a>
+      <a href="https://github.com/je-em716" target="_blank" class="btn btn-outline-light">GitHub</a>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4">
-  <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
   <p>Follow me on 
     <a href="#" class="text-white">LinkedIn</a>, 
     <a href="#" class="text-white">GitHub</a>, 
